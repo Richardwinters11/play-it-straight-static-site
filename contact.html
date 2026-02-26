@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Play Title</title>
+  <meta name="description" content="Request licensing information for Play Title." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">Play Title</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Reactions</a>
+        <a href="excerpt.html">Excerpt</a>
+        <a href="licensing.html">Licensing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <h1 class="title">Request Licensing Information</h1>
+          <p>Send a quick note to the playwright. You will receive confirmation and next steps by email.</p>
+          <p class="kicker">Royalty: $100 per performance</p>
+        </div>
+        <div class="card">
+          <form class="form" name="licensing" method="post" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="licensing" />
+            <p style="display:none;">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div>
+              <label for="institution">Institution</label>
+              <input id="institution" name="institution" type="text" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div>
+              <label for="dates">Intended production dates (optional)</label>
+              <input id="dates" name="dates" type="text" />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <button class="cta" type="submit">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-note">For licensing inquiries, contact the playwright. © <span data-year></span> Play Title.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
