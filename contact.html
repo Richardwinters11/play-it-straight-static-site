@@ -1,81 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact | PLAY IT STRAIGHT</title>
-  <meta name="description" content="Contact the playwright for licensing, performance rights, and production inquiries for PLAY IT STRAIGHT." />
+  <title>Contact | Play It Straight</title>
+  <meta name="description" content="Contact the playwrights for licensing, performance rights, and production inquiries for Play It Straight." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="header">
-    <div class="container nav">
-      <div class="brand">PLAY IT STRAIGHT</div>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="testimonials.html">Reactions</a>
-        <a href="excerpt.html">Excerpt</a>
-        <a href="licensing.html">Licensing</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <nav>
+    <a href="index.html" class="logo">Play It Straight</a>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonials.html">Reactions</a></li>
+      <li><a href="excerpt.html">Excerpt</a></li>
+      <li><a href="licensing.html">Licensing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <main id="main">
-    <section class="section">
-      <div class="container grid-2">
+
+    <div class="page-header">
+      <div class="page-label">Get in Touch</div>
+      <h1>Request<br><em style="font-style:italic; color:var(--blood);">Licensing Info</em></h1>
+      <p>Whether you're an educator, student director, administrator, or community theater rep — we'd love to hear from you.</p>
+    </div>
+
+    <section class="reveal">
+      <div class="grid-2">
         <div>
-          <h1 class="title">Request Licensing Information</h1>
-          <p>Have a question about producing <em>PLAY IT STRAIGHT</em>?</p>
-          <p>Whether you are an educator, student director, administrator, or community theater representative, we would love to hear from you.</p>
-          <p>Use the contact form to inquire about licensing, performance rights, or additional materials. Please include your organization name and anticipated performance dates, if available.</p>
-          <p>All inquiries are handled exclusively at <a href="mailto:richardwinters11@gmail.com">richardwinters11@gmail.com</a>.</p>
-          <p class="kicker">Royalty: $100 per performance</p>
-        </div>
-        <div class="card">
-          <form class="form" name="licensing" method="post" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" action="/thank-you.html">
-            <input type="hidden" name="form-name" value="licensing" />
-            <p style="display:none;">
-              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          <div class="section-label"><span class="num">01</span> — Inquiries</div>
+          <p style="font-size:19px; line-height:1.7; margin-bottom:24px;">Use the form to inquire about licensing, performance rights, or additional materials. Please include your organization name and anticipated performance dates if available.</p>
+          <p style="font-size:19px; line-height:1.7; margin-bottom:40px;">All inquiries are handled directly by the playwrights.</p>
+
+          <div style="border-top: 1px solid var(--rule); padding-top: 32px;">
+            <p style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--blood); margin-bottom:20px;">Direct Contact</p>
+            <p style="font-family:'JetBrains Mono',monospace; font-size:13px; line-height:2.4; color:var(--ink-soft);">
+              <a href="mailto:richardwinters11@gmail.com" style="color:var(--ink); display:block;">richardwinters11@gmail.com</a>
+              <a href="mailto:kerriyund@gmail.com" style="color:var(--ink); display:block;">kerriyund@gmail.com</a>
+              <a href="mailto:garyunchained@yahoo.com" style="color:var(--ink); display:block;">garyunchained@yahoo.com</a>
             </p>
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required />
+          </div>
+
+          <div style="margin-top:32px; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.1em; color:var(--ink-soft);">
+            Royalty: <strong style="color:var(--blood);">$100 per performance</strong>
+          </div>
+        </div>
+
+        <div>
+          <form class="form" name="licensing" method="post" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="licensing" />
+            <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+            <div class="form-row">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div>
+                <label for="institution">Institution</label>
+                <input id="institution" name="institution" type="text" required />
+              </div>
             </div>
-            <div>
-              <label for="institution">Institution</label>
-              <input id="institution" name="institution" type="text" required />
-            </div>
+
             <div>
               <label for="email">Email</label>
               <input id="email" name="email" type="email" required />
             </div>
+
             <div>
               <label for="dates">Intended production dates (optional)</label>
               <input id="dates" name="dates" type="text" />
             </div>
+
             <div>
               <label for="message">Message</label>
               <textarea id="message" name="message" required></textarea>
             </div>
-            <div data-netlify-recaptcha="true"></div>
-            <button class="cta" type="submit">Send Licensing Inquiry</button>
+
+            <button class="btn btn-primary" type="submit" style="width:100%; justify-content:center;">Send Licensing Inquiry →</button>
           </form>
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-note">For licensing inquiries, contact the playwright. © <span data-year></span> PLAY IT STRAIGHT.</p>
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-title">Play It <em>Straight</em></div>
+        <div class="footer-tag">A new play · <span data-year></span></div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:richardwinters11@gmail.com">Richard Winters</a>
+        <a href="mailto:kerriyund@gmail.com">Kerri Yund</a>
+        <a href="mailto:garyunchained@yahoo.com">Gary Wright</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="about.html">About the Play</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="excerpt.html">Script Excerpt</a>
+        <a href="licensing.html">Licensing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span data-year></span> Richard Winters · Kerri Yund · Gary Wright</div>
+      <div>All rights reserved</div>
     </div>
   </footer>
 
