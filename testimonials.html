@@ -1,23 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Reactions | Play It Straight</title>
-  <meta name="description" content="Audience reactions, director reflections, and testimonials for Play It Straight." />
+  <meta name="description" content="Audience reactions, director reflections, and testimonials for Play It Straight.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+<style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style></head>
+<body class="">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <nav>
     <a href="index.html" class="logo">Play It Straight</a>
     <ul>
       <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="productions.html">Productions</a></li>
       <li><a href="testimonials.html">Reactions</a></li>
       <li><a href="excerpt.html">Excerpt</a></li>
       <li><a href="licensing.html">Licensing</a></li>
@@ -30,33 +83,48 @@
     <div class="page-header">
       <div class="page-label">Reactions &amp; Testimonials</div>
       <h1>What people<br><em style="font-style:italic; color:var(--blood);">are saying</em></h1>
-      <p>Audience reactions, director reflections, and cast insights from productions of the play.</p>
     </div>
 
-    <section class="reveal">
-      <div class="section-label"><span class="num">01</span> — Audience</div>
+    <section class="reveal visible">
+      <div class="section-label"><span class="num">01</span> — Directors &amp; Audiences</div>
       <div class="testimonials-grid">
         <div class="testimonial-card">
-          <p class="testimonial-quote">"Audience quote goes here. Keep it concise and impactful."</p>
-          <p class="testimonial-attr">Audience Member</p>
+          <p class="testimonial-quote">"Play It Straight is a lucid dramatic work that transcends our current socio-political reality due to its carefully crafted characters who represent various facets of the American experience in their commitment to change their lives through love, human understanding, dialogue and a desire to improve society. A riveting play which speaks to the tenor of our changing times. I was emotionally moved by the play's ability to inspire hope for future generations."</p>
+          <p class="testimonial-attr">Roberto D. Pomo, Ph.D. — Professor Emeritus, Sacramento State University</p>
         </div>
         <div class="testimonial-card">
-          <p class="testimonial-quote">"Director reflection goes here with the perspective of staging in a black box."</p>
-          <p class="testimonial-attr">Director, Institution</p>
+          <p class="testimonial-quote">"We LOVE this play. Hearing it out loud and having actual students read the student parts brought it to life. This is a really good, tight script… The excitement from the students was electric… I cannot think of a better piece of theatre to be working on right now."</p>
+          <p class="testimonial-attr">Adam Bell(director) — Actors' Workshop of Western Michigan&nbsp; &nbsp; Muskegon, MI</p>
         </div>
         <div class="testimonial-card">
-          <p class="testimonial-quote">"Cast reflection goes here highlighting student engagement."</p>
-          <p class="testimonial-attr">Cast Member</p>
+          <p class="testimonial-quote">"It brought me to tears. It knocked my socks off. It completely engaged me emotionally and intellectually. Simply put it was an 11 out of 10. I see a lot of theater locally and further afield and, to me, this work has more potential than anything new I have seen in many years."</p>
+          <p class="testimonial-attr">Michael Burnstein — R25 Theatre Group audience, Sacramento, CA</p>
         </div>
         <div class="testimonial-card">
-          <p class="testimonial-quote">"Second audience or faculty reaction goes here."</p>
-          <p class="testimonial-attr">Faculty Member</p>
+          <p class="testimonial-quote">"I brought a bunch of my students to see it, and they were crazy about it! The relationship between the conservative father and his daughter is nuanced and moving — and, of course, the portrayal of the untenable position our teachers are in is heartbreaking!"</p>
+          <p class="testimonial-attr">Melanie Smith — teacher, R25 Theatre Group audience, Sacramento, CA</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"Sorry <em>Angels in America</em>, this is the best play I've ever seen, and it's not even finished yet."</p>
+          <p class="testimonial-attr">Sandra Balthazar — Sierra Stages staged reading audience, Nevada City, CA</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"I'm not a theater major or critic, but I've seen lots of plays, classic and modern, and this, in my opinion, is masterful writing. It's among the best new works I've seen."</p>
+          <p class="testimonial-attr">Jim Hefter — staged reading audience, Nevada City, CA</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"I wanted to say what a pleasure it was to see Play It Straight this past weekend. I was laughing, I was crying, and the show flew by like spending time with a good friend. I enjoyed how there was no true 'bad guy' in the show. It was a dad trying to do his best raising his two kids on his own. A principal trying to keep the balance between policy, parents, students, and the law. A teacher creating a space where the kids are allowed to be themselves and through that things go haywire. It's kids becoming adults and figuring out how they want to interact with the world. Play It Straight was a truly moving piece of work and I am beyond glad I was able to see this current rendition. Have a great closing weekend! Break legs"</p>
+          <p class="testimonial-attr">Lauren — R25 Theater Company, 2025 Production</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"I saw Play It Straight at the Stage at the Corner. I've been thinking about it, even now, a week after I saw it. It's a tough show, but I couldn't stop watching and found myself emotionally more and more involved. It was a fabulous play. I urge you to see it."</p>
+          <p class="testimonial-attr">Bob Scolnik — Muskegon, Michigan. Actors Workshop of West Michigan, 2026 Production</p>
         </div>
       </div>
     </section>
 
     <section class="reveal">
-      <div class="section-label"><span class="num">02</span> — Video &amp; Press</div>
+      <div class="section-label"><span class="num">02</span> — Press &amp; Recognition</div>
       <div class="grid-2">
         <div>
           <p style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:var(--blood); margin-bottom:16px;">Video Testimonials</p>
@@ -69,6 +137,9 @@
             <li>TBD award or recognition</li>
             <li>TBD festival selection</li>
           </ul>
+          <div style="margin-top:32px;">
+            <a href="productions.html" class="btn btn-secondary">See the Productions →</a>
+          </div>
         </div>
       </div>
     </section>
@@ -79,7 +150,7 @@
     <div class="footer-inner">
       <div>
         <div class="footer-title">Play It <em>Straight</em></div>
-        <div class="footer-tag">A new play · <span data-year></span></div>
+        <div class="footer-tag">A new play · <span data-year="">2026</span></div>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
@@ -90,18 +161,19 @@
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="about.html">About the Play</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="excerpt.html">Script Excerpt</a>
+        <a href="productions.html">Productions</a>
         <a href="licensing.html">Licensing</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© <span data-year></span> Richard Winters · Kerri Yund · Gary Wright</div>
+      <div>© <span data-year="">2026</span> Richard Winters · Kerri Yund · Gary Wright</div>
       <div>All rights reserved</div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-</body>
-</html>
+  <script src="js/edit-mode.js"></script>
+
+
+</body></html>

@@ -1,23 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Production Gallery | Play It Straight</title>
-  <meta name="description" content="Production photos and video clips for Play It Straight." />
+  <meta name="description" content="Production photos from Play It Straight.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+<style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style></head>
+<body class="">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <nav>
     <a href="index.html" class="logo">Play It Straight</a>
     <ul>
       <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="productions.html">Productions</a></li>
       <li><a href="testimonials.html">Reactions</a></li>
       <li><a href="excerpt.html">Excerpt</a></li>
       <li><a href="licensing.html">Licensing</a></li>
@@ -30,33 +191,158 @@
     <div class="page-header">
       <div class="page-label">Production Gallery</div>
       <h1>Production<br><em style="font-style:italic; color:var(--blood);">Gallery</em></h1>
-      <p>High-impact images and video for directors, faculty, and curious audiences.</p>
+      <p>Photos from the table reads, openings, and staged productions.</p>
     </div>
 
-    <section class="reveal">
-      <div class="section-label"><span class="num">01</span> — Photos</div>
+    <section class="reveal visible">
+      <div class="section-label"><span class="num">01</span> — Sacramento City College-2024</div>
       <div class="grid-3">
-        <div class="photo-placeholder">Production Photo 1</div>
-        <div class="photo-placeholder">Production Photo 2</div>
-        <div class="photo-placeholder">Production Photo 3</div>
-        <div class="photo-placeholder">Production Photo 4</div>
-        <div class="photo-placeholder">Production Photo 5</div>
-        <div class="photo-placeholder">Production Photo 6</div>
+        <figure>
+          <div class="photo"><img src="images/saccity-ross-gabe.jpg" alt="Ross and Gabe — Sacramento City College production"></div>
+          <figcaption class="photo-caption">Ross &amp; Gabe</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/saccity-beacher-hewitt.jpg" alt="Beacher and Hewitt — Sacramento City College production"></div>
+          <figcaption class="photo-caption">Beacher &amp; Hewitt</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/saccity-stern.jpg" alt="Stern — Sacramento City College production" style="object-position: center top;"></div>
+          <figcaption class="photo-caption">Stern</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/hewitt-gabe-morgan.jpg" alt="Hewitt, Gabe, and Morgan in rehearsal"></div>
+          <figcaption class="photo-caption">Hewitt · Gabe · Morgan</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/saccity-cj.jpg" alt="CJ — Sacramento City College production" style="object-position: center top;"></div>
+          <figcaption class="photo-caption">CJ</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="reveal">
-      <div class="section-label"><span class="num">02</span> — Video</div>
-      <h2 class="section-heading">See the play <em>in action</em>.</h2>
-      <div class="grid-2">
-        <div>
-          <p style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:var(--blood); margin-bottom:16px;">Full Performance / Trailer</p>
-          <div class="photo-placeholder" style="aspect-ratio:16/9;">Video Embed Placeholder</div>
-        </div>
-        <div>
-          <p style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:var(--blood); margin-bottom:16px;">Director Commentary</p>
-          <div class="photo-placeholder" style="aspect-ratio:16/9;">Trailer Placeholder</div>
-        </div>
+    <section class="reveal visible">
+      <div class="section-label"><span class="num">02</span> — R25 Production-2025</div>
+      <div class="grid-3">
+        <figure>
+          <div class="photo"><img src="images/ross-opening.jpg" alt="Ross — opening scene"></div>
+          <figcaption class="photo-caption">Ross and students</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/production-2025-04-17.jpg" alt="Hope and Hewitt" style="object-position: center top;"></div>
+          <figcaption class="photo-caption">Hope and Hewitt</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/r25-licorice.jpg" alt="Licorice — R25 Production"></div>
+          <figcaption class="photo-caption">Hope and Ross</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/r25-jenny-ross.jpg" alt="Jenny and Ross — R25 Production"></div>
+          <figcaption class="photo-caption">Jenny and Ross</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/r25-tiktok-challenge.jpg" alt="Tik Tok Challenge — R25 Production"></div>
+          <figcaption class="photo-caption">Tik Tok Challenge</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/r25-flyer.jpg" alt="R25 Production letter-size flyer" style="object-position: center top;"></div>
+          <figcaption class="photo-caption">R25 Flyer</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/r25-gabe.jpg" alt="Gabe — R25 Production" style="object-position: center top;"></div>
+          <figcaption class="photo-caption">IVAN</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="reveal visible">
+      <div class="section-label"><span class="num">03</span> — Sierra Theater Company-2024&nbsp;</div>
+      <div class="grid-3">
+        <figure>
+          <div class="photo"><img src="images/stc-first-reading.jpg" alt="STC — First public reading"></div>
+          <figcaption class="photo-caption">STC — First Public Reading</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/stc-first-reading-curtain.jpg" alt="STC first reading — curtain call from the stage"></div>
+          <figcaption class="photo-caption">STC — First Reading, Curtain Call</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="reveal visible">
+      <div class="section-label"><span class="num">04</span> — Cosumnes River College 2024</div>
+      <div class="grid-3">
+        <figure>
+          <div class="photo"><img src="images/crc-poster-2024.jpg" alt="Play It Straight poster — CRC River Stage, Sacramento Premiere, Oct 15–19, 2024"></div>
+          <figcaption class="photo-caption">CRC Poster</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/crc-sept24-img2358.jpg" alt="Cosumnes River College rehearsal, Sept 24 2024"></div>
+          <figcaption class="photo-caption">Stage Manager</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/crc-sept24-img2359.jpg" alt="Cosumnes River College rehearsal, Sept 24 2024"></div>
+          <figcaption class="photo-caption">Anthony D'Juan- Director&nbsp;</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/crc-sept24-img5661.jpg" alt="Cosumnes River College rehearsal, Sept 24 2024"></div>
+          <figcaption class="photo-caption">ensemble</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="reveal visible">
+      <div class="section-label"><span class="num">05</span> — Actors Theater of West Michigan-2026</div>
+      <div class="grid-3">
+        <figure>
+          <div class="photo"><img src="images/awmi-sorry-thespis.jpg" alt="Sorry Thespis — Actors Theater of West Michigan"></div>
+          <figcaption class="photo-caption">Jenny and Thespis</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/awmi-group-scene.jpg" alt="Group scene — Actors Theater of West Michigan, Muskegon"></div>
+          <figcaption class="photo-caption">Ross and CJ</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/awmi-muskegon-pride.jpg" alt="Muskegon Pride — Actors Theater of West Michigan" style="object-fit: contain; background: #1a1715;"></div>
+          <figcaption class="photo-caption">Muskegon Pride Donation</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="reveal visible">
+      <div class="section-label"><span class="num">06</span> — Theatre on the Ridge-2026</div>
+      <div class="grid-3">
+        <figure>
+          <div class="photo"><img src="images/totr-jenny.jpg" alt="Jenny — Theatre on the Ridge"></div>
+          <figcaption class="photo-caption">Jenny</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="reveal visible">
+      <div class="section-label"><span class="num">07</span> —various Ensembles&nbsp;</div>
+      <div class="grid-3">
+        <figure>
+          <div class="photo"><img src="images/crc-cast-2024.jpg" alt="Cosumnes River College ensemble cast, 2024"></div>
+          <figcaption class="photo-caption">Ensemble Cast — Cosumnes River College</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/production-2025-04-11.jpg" alt="Ensemble — R25 Theater Company"></div>
+          <figcaption class="photo-caption">Ensemble — R25 Theater Company</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/sierra-theater-company.jpg" alt="Sierra Theater Company — cast selfie from the stage"></div>
+          <figcaption class="photo-caption">Sierra Theater Company</figcaption>
+        </figure>
+        <figure>
+          <div class="photo"><img src="images/muskegon-table-read.jpg" alt="Muskegon table read"></div>
+          <figcaption class="photo-caption">Muskegon Table Read</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="reveal visible">
+      <div class="cta-block" style="padding:60px 40px;">
+        <a href="productions.html" class="btn btn-primary">See the Productions →</a>
       </div>
     </section>
 
@@ -66,7 +352,7 @@
     <div class="footer-inner">
       <div>
         <div class="footer-title">Play It <em>Straight</em></div>
-        <div class="footer-tag">A new play · <span data-year></span></div>
+        <div class="footer-tag">A new play · <span data-year="">2026</span></div>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
@@ -77,18 +363,19 @@
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="about.html">About the Play</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="excerpt.html">Script Excerpt</a>
+        <a href="productions.html">Productions</a>
         <a href="licensing.html">Licensing</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© <span data-year></span> Richard Winters · Kerri Yund · Gary Wright</div>
+      <div>© <span data-year="">2026</span> Richard Winters · Kerri Yund · Gary Wright</div>
       <div>All rights reserved</div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-</body>
-</html>
+  <script src="js/edit-mode.js"></script>
+
+
+</body></html>

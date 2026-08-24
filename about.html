@@ -1,23 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About the Play | Play It Straight</title>
-  <meta name="description" content="Formal synopsis, themes, content advisory, and production details for Play It Straight." />
+  <meta name="description" content="Formal synopsis, themes, content advisory, and production details for Play It Straight.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+<style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style></head>
+<body class="">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <nav>
     <a href="index.html" class="logo">Play It Straight</a>
     <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="productions.html">Productions</a></li>
       <li><a href="testimonials.html">Reactions</a></li>
       <li><a href="excerpt.html">Excerpt</a></li>
       <li><a href="licensing.html">Licensing</a></li>
@@ -30,52 +326,40 @@
     <div class="page-header">
       <div class="page-label">About the Play</div>
       <h1>About<br><em style="font-style:italic; color:var(--blood);">the Play</em></h1>
-      <p><em>Play It Straight</em> is a contemporary drama set in a public high school where a classroom comment ignites a broader political and cultural conflict.</p>
+      <p>One offhand remark in a drama classroom. Within weeks, a student's home has come apart, a school district is at war with itself, and a community's quiet political fault lines are no longer quiet. <em>Play It Straight</em> is a contemporary drama about how small moments do enormous damage — to families, to schools, and to the people caught between them.</p>
     </div>
 
     <!-- SYNOPSIS -->
-    <section class="reveal">
+    <section class="reveal visible">
       <div class="section-label"><span class="num">01</span> — Synopsis</div>
       <h2 class="section-heading">What <em>happens</em>.</h2>
 
       <div class="play-intro">
         <div>
-          <p class="lead">When drama teacher Ross sarcastically tells a disruptive student to "sit on my lap," the moment is reported by a parent and escalates into a formal administrative inquiry.</p>
-          <p>As the school attempts to protect itself legally, students — particularly LGBTQ students — find their safety and autonomy threatened. The arts classroom, once a place of creativity and refuge, becomes a battleground over what can be said, who can exist openly, and who controls the narrative.</p>
-        </div>
-        <div>
-          <p>The play examines the consequences of politicizing education and the human cost of institutional self-protection.</p>
-          <p>It asks what it means to stand up for yourself and others when doing so carries real consequences — and what a teacher owes to a student when the law says one thing and the kid's life says another.</p>
-          <div class="tags" style="margin-top:32px;">
-            <span class="tag">Identity</span>
-            <span class="tag">Student Agency</span>
-            <span class="tag">LGBTQ+ Themes</span>
-            <span class="tag">Censorship</span>
-            <span class="tag">Comedy + Drama</span>
-            <span class="tag">Parental Authority</span>
-          </div>
+          <p class="lead">In a public high school drama class, veteran teacher Ross loses patience with a disruptive student and sarcastically tells him to "sit on my lap." A parent hears about it and files a complaint. What starts as a routine classroom moment becomes a formal administrative inquiry, and the new assistant principal — eager to prove herself — takes the case up the chain. The situation quickly escalates as student privacy, parental rights, and administrative policies collide. By Act Two, the cost is everywhere: Ross — once the steadiest adult in the building — is shaken, defensive, and unsure he still belongs in the classroom. The administration, trying to protect itself, has alienated the teachers it depends on and the families it claims to serve. And the students, especially the ones whose lives the policies were never written to consider, have been left to absorb the damage on their own. .</p>
         </div>
       </div>
     </section>
 
     <!-- STUDENT-CENTERED VERSION -->
     <div class="section-alt">
-      <div class="inner reveal">
-        <div class="section-label"><span class="num">02</span> — For Students</div>
-        <h2 class="section-heading">What it's <em>really</em> about.</h2>
+      <div class="inner reveal visible">
+        <div class="section-label"><span class="num">02</span> — stakeholders</div>
+        <h2 class="section-heading">What it's <em style="color: #c1272d;">really</em> about.</h2>
         <div class="grid-2">
           <div>
-            <p style="font-size:19px; line-height:1.7; margin-bottom:24px;"><em>Play It Straight</em> takes place in a high school drama class where students are encouraged to be creative and honest. When a joke during rehearsal is misunderstood and reported, the situation quickly grows into something much bigger than anyone expected.</p>
-            <p style="font-size:19px; line-height:1.7;">Students find themselves caught between parents, administrators, and school policy. For some — especially LGBTQ students — the conflict becomes deeply personal. The play asks what it means to stand up for yourself and others when doing so carries real consequences.</p>
+            <p style="font-size:19px; line-height:1.7; margin-bottom:24px;"><em style="color: #c1272d;">Play It Straight</em> explores the tension between Chaos and Control. It explores the Courage required to live one's Truth and the cost of personal honesty and integrity.</p>
+            <p style="font-size:19px; line-height:1.7; margin-bottom:24px;"><em style="color: #c1272d;">Play It Straight</em> examines the complex roles society asks our teachers to fill: Mentor. Friend. Social conscience. Refuge. Trusted ally. Role Model. Legal authority. Safety&nbsp; monitor.&nbsp; Caretaker.&nbsp;&nbsp;</p>
+            <p style="font-size:19px; line-height:1.7; margin-bottom:24px;"><em style="color: #c1272d;">Play It Straight</em>&nbsp;looks at the impact, intentional and otherwise, that the laws, policies, and regulations have on our children and our society.</p>
           </div>
           <div class="card">
-            <h3>Themes</h3>
+            <h3>Audience for Play It Straight</h3>
             <ul class="rule-list">
-              <li>Identity and self-definition</li>
-              <li>Student agency and autonomy</li>
-              <li>LGBTQ+ visibility and belonging</li>
-              <li>Artistic expression and censorship</li>
-              <li>Parental authority and institutional pressure</li>
+              <li>Political Activists</li>
+              <li>High school Drama students-current and former</li>
+              <li>LGBTQ+&nbsp;</li>
+              <li>High School community -Teachers, Administration,&nbsp; Students, Parents, School boards,</li>
+              <li>&nbsp;Concerned citizens about current politics in US</li>
             </ul>
           </div>
         </div>
@@ -83,7 +367,7 @@
     </div>
 
     <!-- PRODUCTION DETAILS -->
-    <section class="reveal">
+    <section class="reveal visible">
       <div class="section-label"><span class="num">03</span> — Production Details</div>
       <h2 class="section-heading">Built for <em>your</em> program.</h2>
 
@@ -93,7 +377,7 @@
           <ul class="rule-list">
             <li>Authors: Richard Winters, Kerri Yund, Gary Wright</li>
             <li>Running time: Approximately two hours, plus intermission</li>
-            <li>Cast: 10 actors total (4 adults, 6 students)</li>
+            <li>Cast: 10+ actors total (4 adults, 6+ students)</li>
             <li>Doubling: No specified doubling</li>
             <li>Staging: Flexible — black box-friendly</li>
             <li>Royalty: $100 per performance</li>
@@ -101,7 +385,7 @@
         </div>
         <div class="card">
           <h3>Who Can Produce It</h3>
-          <p style="font-size:16px; line-height:1.7; margin-bottom:16px;">Available for production by community colleges, colleges, universities, and community theaters.</p>
+          <p style="font-size:16px; line-height:1.7; margin-bottom:16px;">Available for production by professional and community theaters.&nbsp; It is also available to community colleges, colleges, universities, and brave high school theater programs,</p>
           <p style="font-size:16px; line-height:1.7; margin-bottom:24px;">Several roles are explicitly open-gender, giving directors room to cast to the company in front of them. A few roles require specific representation; the character descriptions make that clear.</p>
           <a href="contact.html" class="btn btn-primary">Request a Perusal Script →</a>
         </div>
@@ -110,7 +394,7 @@
       <div class="facts-grid" style="margin-top:60px;">
         <div class="fact">
           <div class="fact-label">Ensemble</div>
-          <div class="fact-value">10 <span class="unit">4 adults / 6 students</span></div>
+          <div class="fact-value">10+<span class="unit">4 adults-6+ students</span></div>
         </div>
         <div class="fact">
           <div class="fact-label">Runtime</div>
@@ -129,15 +413,40 @@
 
     <!-- CONTENT ADVISORY -->
     <div class="section-alt">
-      <div class="inner reveal">
+      <div class="inner reveal visible">
         <div class="section-label"><span class="num">04</span> — Content Advisory</div>
         <h2 class="section-heading">Know before<br>you <em>produce</em>.</h2>
         <div style="max-width:700px;">
-          <p style="font-size:19px; line-height:1.7;">This play contains strong language, homophobic slurs, discussion of conversion therapy, political extremism themes, accusations of misconduct, and mature discussions of sexuality and identity.</p>
-          <p style="font-size:16px; line-height:1.7; margin-top:24px; color:var(--ink-soft);">Organizations are encouraged to engage thoughtfully with the play's themes. Production approval is handled directly and collaboratively to support organizations in presenting the work responsibly and successfully.</p>
+          <p style="font-size:19px; line-height:1.7; margin-bottom:24px;">This play contains strong language, homophobic slurs, discussion of conversion therapy, political extremism themes, accusations of misconduct, and mature discussions of sexuality and identity.</p>
+          <p style="font-size:19px; line-height:1.7; margin-bottom:24px;">Organizations are encouraged to engage thoughtfully with the play's themes. Production approval is handled directly and collaboratively to support organizations in presenting the work responsibly and successfully.</p>
+          <p style="font-size:19px; line-height:1.7; margin-bottom:24px;">We encourage the use of <em style="color:#c1272d;">Play It Straight</em> to support organizations which support members of the LGBTQ+ community.</p>
         </div>
       </div>
     </div>
+
+    <!-- WRITERS -->
+    <section id="writers" class="reveal visible">
+      <div class="section-label"><span class="num">05</span> — Development History</div>
+      <h2 class="section-heading">Three writers. <em>One</em> play.</h2>
+
+      <div class="playwrights-grid">
+        <div class="playwright">
+          <div class="playwright-name">Richard Winters</div>
+          <div class="playwright-role">Playwright</div>
+          <p class="playwright-bio">Richard Winters, drawing on his decades of experience as a Drama and English teacher in California public high schools, hosts a series of off-campus improv/writing workshops with a small group of his Drama students. The plan: write a comedy based on a funny story he used to tell at parties — about the time a careless comment to a disruptive student sparked an investigation into his conduct and classroom management style, and led to an official reprimand, and one of his worst-ever days at work.</p>
+        </div>
+        <div class="playwright">
+          <div class="playwright-name">Kerri Yund</div>
+          <div class="playwright-role">Playwright</div>
+          <p class="playwright-bio">Kerri Yund, a former student of Richard's, stays with the project, and the writing continues. The forcible outing of Hope to her father in adherence to district policy is Kerri's suggestion, based on similar policies which exist in many states where right wing Christian nationalists have infiltrated local school boards. The tone of the play turns darker. It's no longer a comedy. Although Kerri's family does not closely resemble Hope's family, Hope's storyline is heavily influenced and informed by Kerri's lived experience witnessing students taking refuge in the place where they felt safest — in Richard Winters' Drama class. After high school, Kerri went on to edit the FEM at UCLA, and is now a First Grade teacher in Sacramento. She credits Richard as a major influence in her decision to become an educator.</p>
+        </div>
+        <div class="playwright">
+          <div class="playwright-name">Gary Wright</div>
+          <div class="playwright-role">Playwright</div>
+          <p class="playwright-bio">Gary Wright, long-time friend and theatre colleague of Richard's, and a seasoned writer with play commissions from Foothill Theatre Company, Sacramento Theatre Company, Arizona Theatre Matters, and the Palo Alto Childrens' Theatre, comes aboard to lead the next phase of the work. From here on, the mission is character development, and experimenting with different variations of the second act. We wrote a lot of endings we didn't like. The second half got very complicated and very dark for a while there. Finally, simplifying and focusing Act Two on everyone finding their power and pushing back against oppression was Gary's idea — inspired by yet another funny story from Richard's long and eventful teaching career.</p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -145,7 +454,7 @@
     <div class="footer-inner">
       <div>
         <div class="footer-title">Play It <em>Straight</em></div>
-        <div class="footer-tag">A new play · <span data-year></span></div>
+        <div class="footer-tag">A new play · <span data-year="">2026</span></div>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
@@ -156,18 +465,19 @@
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="about.html">About the Play</a>
-        <a href="gallery.html">Gallery</a>
         <a href="excerpt.html">Script Excerpt</a>
         <a href="licensing.html">Licensing</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© <span data-year></span> Richard Winters · Kerri Yund · Gary Wright</div>
+      <div>© <span data-year="">2026</span> Richard Winters · Kerri Yund · Gary Wright</div>
       <div>All rights reserved</div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-</body>
-</html>
+  <script src="js/edit-mode.js"></script>
+
+
+</body></html>
