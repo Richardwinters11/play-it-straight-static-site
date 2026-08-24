@@ -2,6 +2,12 @@
   publish = "."
 
 [[redirects]]
+  from = "https://www.play-it-straight.com/*"
+  to = "https://play-it-straight.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/gallery"
   to = "/productions"
   status = 301
