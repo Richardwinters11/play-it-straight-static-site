@@ -346,6 +346,33 @@
       outline: 2px solid #c1272d;
       background: rgba(255,255,200,0.4);
     }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
   </style></head>
 <body class="">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -356,6 +383,7 @@
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="productions.html">Productions</a></li>
       <li><a href="testimonials.html">Reactions</a></li>
+      <li><a href="news.html">In The News</a></li>
       <li><a href="excerpt.html">Excerpt</a></li>
       <li><a href="licensing.html">Licensing</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -377,7 +405,7 @@
 
       <div class="play-intro">
         <div>
-          <p class="lead">In a public high school drama class, veteran teacher Ross loses patience with a disruptive student and sarcastically tells him to "sit on my lap." A parent hears about it and files a complaint. What starts as a routine classroom moment becomes a formal administrative inquiry, and the new assistant principal — eager to prove herself — takes the case up the chain. The situation quickly escalates as student privacy, parental rights, and administrative policies collide. By Act Two, the cost is everywhere: Ross — once the steadiest adult in the building — is shaken, defensive, and unsure he still belongs in the classroom. The administration, trying to protect itself, has alienated the teachers it depends on and the families it claims to serve. And the students, especially the ones whose lives the policies were never written to consider, have been left to absorb the damage on their own. .</p>
+          <p class="lead">In a public high school drama class, veteran teacher Ross makes a sarcastic suggestion to a disruptive student. The next morning, a parent hears about it.&nbsp; What started as a seemingly insignificant classroom moment, now snowballs into a formal administrative inquiry. The new assistant principal — eager to prove herself — takes the case up the chain. The situation quickly escalates as student privacy, parental rights, and administrative policies collide.&nbsp;</p>
         </div>
       </div>
     </section>
@@ -396,11 +424,11 @@
           <div class="card">
             <h3>Audience for Play It Straight</h3>
             <ul class="rule-list">
-              <li>Theater Artists</li>
-              <li>High school Drama students-current and former</li>
+              <li>Theatre Artists</li>
+              <li>High school Drama students - current and former</li>
               <li>LGBTQ+&nbsp;</li>
-              <li>High School community -Teachers, Administration,&nbsp; Students, Parents, School boards,</li>
-              <li>&nbsp;Concerned citizens about current politics in US</li>
+              <li>Education Community - Students, Parents, Teachers, Administrators, School boards...</li>
+              <li>&nbsp;Citizens concerned about current politics in US.</li>
             </ul>
           </div>
         </div>
@@ -416,7 +444,7 @@
         <div class="card">
           <h3>By the Numbers</h3>
           <ul class="rule-list">
-            <li>Authors: Richard Winters, Kerri Yund, Gary Wright</li>
+            <li><br></li>
             <li>Running time: Approximately two hours, plus intermission</li>
             <li>Cast: 10+ actors total (4 adults, 6+ students)</li>
             <li>Doubling: No specified doubling</li>
@@ -467,7 +495,7 @@
 
     <!-- WRITERS -->
     <section id="writers" class="reveal visible">
-      <div class="section-label"><span class="num">05</span> — Development History</div>
+      <div class="section-label"><span class="num"><br></span></div>
       <h2 class="section-heading">Three writers. <em>One</em> play.</h2>
 
       <div class="playwrights-grid">
