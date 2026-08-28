@@ -49,6 +49,60 @@
       outline: 2px solid #c1272d;
       background: rgba(255,255,200,0.4);
     }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
   </style></head>
 <body class="">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -57,8 +111,10 @@
     <a href="index.html" class="logo">Play It Straight</a>
     <ul>
       <li><a href="about.html">About</a></li>
-      <li><a href="productions.html">Productions</a></li>
+      <li><a href="themes.html">Themes</a></li>
       <li><a href="testimonials.html">Reactions</a></li>
+      <li><a href="productions.html">Productions</a></li>
+      <li><a href="writers.html">Creation</a></li>
       <li><a href="news.html">In The News</a></li>
       <li><a href="excerpt.html">Excerpt</a></li>
       <li><a href="licensing.html" class="active">Licensing</a></li>
@@ -68,10 +124,16 @@
 
   <main id="main">
 
-    <div class="page-header">
-      <div class="page-label">Licensing &amp; Booking</div>
-      <h1>Produce<br><em style="font-style:italic; color:var(--blood);">this play</em></h1>
-      <p><em>Play It Straight</em> is recommended for professional theatre companies, community theatres, college-level theatre programs, and courageous high school drama departments.</p>
+    <div class="page-header" style="display:grid; grid-template-columns:1fr 320px; gap:48px; align-items:center;">
+      <div>
+        <div class="page-label">Licensing &amp; Booking</div>
+        <h1>Produce<br><em style="font-style:italic; color:var(--blood);">this play</em></h1>
+        <p><em>Play It Straight</em> is recommended for professional theatre companies, community theatres, college-level theatre programs, and courageous high school drama departments.&nbsp; It works exceedingly well for professional theatre companies that have an educational/ youth component.&nbsp;</p>
+      </div>
+      <figure style="margin:0;">
+        <img src="images/crc-sept24-img2359.jpg" alt="Anthony D'Juan, Director — Cosumnes River College" style="width:100%; height:auto; display:block; border-radius:4px;">
+        <figcaption class="photo-caption" style="margin-top:8px;">Anthony D'Juan — Director, Cosumnes River College</figcaption>
+      </figure>
     </div>
 
     <!-- PROCESS + FAQ -->
@@ -93,7 +155,6 @@
           <div>
             <h2 class="section-heading" style="font-size:clamp(32px,4vw,52px); margin-bottom:32px;"><em>FAQ</em>.</h2>
             <ul class="rule-list">
-              <li><strong>Who can produce this play?</strong> Professional and amateur theaters, universities, colleges, community colleges, and courageous high school theater programs. <em>Note:</em> meaty roles for adults and students alike make <em>Play It Straight</em> a particularly good fit for professional theaters with an educational component looking to showcase a few strong young actors.</li>
               <li><strong>Is this black box friendly?</strong> Yes. Staging is flexible with manageable technical requirements.</li>
               <li><strong>How do we request rights?</strong> No agent, no publisher, no intermediary of any kind — you can deal directly with the playwrights. Just use the website contact form to reach out to us and we'll respond in a timely manner.</li>
               <li><strong>Is there a minimum run?</strong> No minimum performance requirement is specified.</li>
@@ -102,6 +163,25 @@
         </div>
       </div>
     </div>
+
+    <!-- BY THE NUMBERS -->
+    <section class="reveal visible">
+      <div class="section-label"><span class="num">02</span> — By the Numbers</div>
+      <div class="facts-grid" style="grid-template-columns:repeat(3,1fr);">
+        <div class="fact">
+          <div class="fact-label">Ensemble</div>
+          <div class="fact-value">10&nbsp;<br><span class="unit">4 adults-6+ students</span></div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Runtime</div>
+          <div class="fact-value">110<span class="unit">minutes, two acts</span></div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Staging</div>
+          <div class="fact-value">One<span class="unit">flexible school unit</span></div>
+        </div>
+      </div>
+    </section>
 
     <!-- SCHOOL-FRIENDLY NOTE -->
     <section class="reveal visible">
@@ -113,6 +193,19 @@
         <p style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.1em; color:var(--ink-soft);">All licensing inquiries: <a href="mailto:richardwinters11@gmail.com" style="color:var(--blood);">richardwinters11@gmail.com</a></p>
       </div>
     </section>
+
+    <!-- CONTENT ADVISORY -->
+    <div class="section-alt">
+      <div class="inner reveal visible">
+        <div class="section-label"><span class="num">04</span> — Content Advisory</div>
+        <h2 class="section-heading">Know before<br>you <em>produce</em>.</h2>
+        <div style="max-width:700px;">
+          <p style="font-size:19px; line-height:1.7; margin-bottom:24px;">This play contains strong language, homophobic slurs, discussion of conversion therapy, political extremism themes, accusations of misconduct, and mature discussions of sexuality and identity.</p>
+          <p style="font-size:19px; line-height:1.7; margin-bottom:24px;">Organizations are encouraged to engage thoughtfully with the play's themes. Production approval is handled directly and collaboratively to support organizations in presenting the work responsibly and successfully.</p>
+          <p style="font-size:19px; line-height:1.7; margin-bottom:24px;">We encourage the use of <em style="color:#c1272d;">Play It Straight</em> to support organizations which support members of the LGBTQ+ community.</p>
+        </div>
+      </div>
+    </div>
 
   </main>
 

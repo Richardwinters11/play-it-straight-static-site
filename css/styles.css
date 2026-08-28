@@ -93,13 +93,13 @@ nav ul {
 }
 
 nav a {
-  color: var(--ink-soft);
+  color: var(--ink);
   text-decoration: none;
   transition: color 0.2s;
 }
 
-nav a:hover,
-nav a.active { color: var(--blood); }
+nav a:hover { color: var(--blood); }
+nav a.active { color: var(--ink); font-weight: 700; }
 
 /* ===== HERO (home page) ===== */
 .hero {
@@ -166,10 +166,11 @@ nav a.active { color: var(--blood); }
   border-left: 1px solid var(--ink);
   padding-left: 24px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.05em;
   line-height: 2;
-  color: var(--ink-soft);
+  color: var(--blood);
+  font-weight: 700;
 }
 
 .hero-facts strong {
@@ -189,7 +190,7 @@ nav a.active { color: var(--blood); }
 
 /* ===== PAGE HEADER (inner pages) ===== */
 .page-header {
-  padding: 140px 40px 60px;
+  padding: 90px 40px 40px;
   position: relative;
   z-index: 2;
   max-width: 1280px;
@@ -321,7 +322,7 @@ nav a.active { color: var(--blood); }
 
 /* ===== SECTIONS ===== */
 section {
-  padding: 100px 40px;
+  padding: 70px 40px;
   max-width: 1280px;
   margin: 0 auto;
   position: relative;
@@ -348,7 +349,7 @@ section {
   font-size: clamp(42px, 6vw, 78px);
   line-height: 1;
   letter-spacing: -0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
   max-width: 900px;
 }
 
@@ -358,7 +359,7 @@ section {
 .section-alt {
   background: var(--paper-dark);
   max-width: none;
-  padding: 80px 40px;
+  padding: 56px 40px;
   position: relative;
   z-index: 2;
 }
@@ -430,7 +431,7 @@ section {
 .excerpt-block {
   background: var(--paper);
   color: var(--ink);
-  padding: 100px 40px;
+  padding: 70px 40px;
   position: relative;
   z-index: 2;
   border-top: 1px solid rgba(26, 23, 21, 0.12);
@@ -496,7 +497,7 @@ section {
 .script-page {
   background: var(--paper);
   color: var(--ink);
-  padding: 80px 40px;
+  padding: 56px 40px;
   position: relative;
   z-index: 2;
   border-top: 1px solid rgba(26, 23, 21, 0.12);
@@ -514,8 +515,8 @@ section {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--blood);
-  margin-bottom: 32px;
-  margin-top: 60px;
+  margin-bottom: 24px;
+  margin-top: 40px;
   border-top: 1px solid rgba(26, 23, 21, 0.15);
   padding-top: 32px;
 }
@@ -558,7 +559,7 @@ section {
   gap: 2px;
   background: var(--ink);
   border: 1px solid var(--ink);
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .fact {
@@ -696,16 +697,22 @@ ol.rule-list li::before {
 
 /* ===== TESTIMONIALS ===== */
 .testimonials-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  background: var(--ink);
-  border: 1px solid var(--ink);
+  column-count: 2;
+  column-gap: 24px;
+}
+
+.testimonials-grid .testimonial-card {
+  break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 24px;
 }
 
 .testimonial-card {
   background: var(--paper);
   padding: 40px;
+  border: 1px solid rgba(26, 23, 21, 0.12);
+  border-radius: 4px;
   transition: background 0.2s;
 }
 
@@ -917,7 +924,7 @@ textarea { min-height: 140px; resize: vertical; }
 /* ===== CTA BLOCK ===== */
 .cta-block {
   text-align: center;
-  padding: 120px 40px;
+  padding: 80px 40px;
   position: relative;
   z-index: 2;
   max-width: none;
@@ -942,14 +949,14 @@ textarea { min-height: 140px; resize: vertical; }
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 /* ===== FOOTER ===== */
 footer {
   background: var(--ink);
   color: var(--paper);
-  padding: 80px 40px 40px;
+  padding: 56px 40px 32px;
   position: relative;
   z-index: 2;
 }
