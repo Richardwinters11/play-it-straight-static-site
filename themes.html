@@ -103,6 +103,33 @@
       outline: 2px solid #c1272d;
       background: rgba(255,255,200,0.4);
     }
+  </style><style>
+    #edit-toolbar {
+      position: fixed; bottom: 20px; right: 20px; z-index: 99999;
+      display: flex; gap: 8px; align-items: center;
+      font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
+    }
+    #edit-toolbar button {
+      background: #1a1715; color: #f4efe6; border: 1px solid #1a1715;
+      padding: 10px 14px; border-radius: 6px; cursor: pointer;
+      font: inherit; letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #edit-toolbar button.primary { background: #c1272d; border-color: #c1272d; }
+    #edit-toolbar button:hover { opacity: 0.88; }
+    #edit-toolbar .status { color: #1a1715; background: rgba(244,239,230,0.95);
+      padding: 6px 10px; border-radius: 4px; }
+    body.editing [contenteditable="true"] {
+      outline: 1px dashed rgba(193,39,45,0.45);
+      outline-offset: 2px;
+    }
+    body.editing [contenteditable="true"]:hover {
+      outline: 1px solid rgba(193,39,45,0.85);
+    }
+    body.editing [contenteditable="true"]:focus {
+      outline: 2px solid #c1272d;
+      background: rgba(255,255,200,0.4);
+    }
   </style></head>
 <body class="">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -132,8 +159,7 @@
 <!-- STUDENT-CENTERED VERSION -->
     <div class="section-alt">
       <div class="inner reveal visible">
-        <div class="section-label"><span class="num">02</span> — stakeholders</div>
-        <h2 class="section-heading">What it's <em style="color: #c1272d;">really</em> about.</h2>
+                <h2 class="section-heading">What it's <em style="color: #c1272d;">really</em> about.</h2>
         <div class="grid-2">
           <div>
             <p style="font-size:19px; line-height:1.7; margin-bottom:24px;"><em style="color: #c1272d;">Play It Straight</em> explores the effects of political agendas imposed upon our public schools, and the consequences-both intended and otherwise-for our children and families.</p>
